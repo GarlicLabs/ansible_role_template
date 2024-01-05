@@ -19,7 +19,7 @@ pipx install copier
 As easy as copier is.  
 
 ```bash
-copier copy ./ansible_role_template ./
+copier copy https://github.com/GarlicLabs/ansible_role_template ./
 ```
 
 ## License
