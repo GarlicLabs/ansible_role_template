@@ -1,0 +1,19 @@
+role_name:
+    type: str
+    help: Name of your ansible role
+
+authors:
+    type: str
+    help: Comma seperated list of authors of this role
+
+namespace:
+    type: str
+    help: Namespace of this role, it also will be published on ansible galaxy under this namespace
+
+description:
+    type: str
+    help: Describe what this role is doing for ansible galaxy
+
+is_role_k8s_related:
+    type: bool
+    help: Is the role k8s related and need k3d molecule tests?
