@@ -22,6 +22,10 @@ As easy as copier is.
 copier copy https://github.com/GarlicLabs/ansible_role_template ./
 ```
 
+## Development
+
+To bring the changes live you have done, create a tag and push it!   
+
 ## License
 
 GNU General Public License version 3
