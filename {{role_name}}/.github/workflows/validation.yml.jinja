@@ -35,7 +35,7 @@ jobs:
       - name: Remove results directory
         run: rm -rf kics-results/
 
-{% if is_role_k8s_related %}
+{% if is_role_k8s_related +%}
   Testing:
     runs-on: ubuntu-latest
     steps:
@@ -76,6 +76,7 @@ jobs:
   Testing:
     runs-on: ubuntu-latest
     strategy:
+      matrix:
         distro:
           - debian12
           - debian11
@@ -100,4 +101,5 @@ jobs:
         env:
           PY_COLORS: '1'
           ANSIBLE_FORCE_COLOR: '1'
+          MOLECULE_DISTRO: {{ "${{ matrix.distro }}" }}
 {% endif %}
